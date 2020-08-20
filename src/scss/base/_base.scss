@@ -1,0 +1,26 @@
+$bg-color: #eaeaea;
+$font-color: black;
+$menu-border-color: #f0cf67;
+$menu-border-color-2: #dc456c;
+$btn-color: #5eb1f7;
+$btn-border-color: #5eb1f7;
+$btn-border-radius: 10rem;
+$color-white: #fff;
+:root {
+  --color-primary: #3848ad;
+  --color-secondary: #3341a2;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%; //1 rem  =  10px/16px = 62.5
+}
+body {
+  box-sizing: border-box;
+  background-color: $bg-color;
+}

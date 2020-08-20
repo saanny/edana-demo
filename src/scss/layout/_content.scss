@@ -1,0 +1,119 @@
+.content-wrapper {
+  flex: 1;
+  margin-left: 4.5rem;
+  flex-direction: column;
+}
+.content {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  border-radius: 0.3rem;
+  background-color: #fff;
+}
+.content-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-top: 2px solid $menu-border-color;
+  border-bottom: 2px solid #80808038;
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #5eb1f7;
+    background-color: #80808033;
+    border-radius: 100px;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  &__title {
+    font-weight: 450;
+  }
+}
+.main-content-wrapper {
+  display: flex;
+  padding: 2rem;
+}
+.content-sidebar {
+  flex: 0 0 20%;
+  display: flex;
+  font-size: 1.5rem;
+  color: #bbbbbb;
+  border-right: 2px solid #b9b9b95c;
+  & > * {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__list-item {
+    list-style: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__list-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    padding: 1.3rem 1rem;
+    transition: all 0.3 ease;
+
+    &.active {
+      border-right: none !important;
+      border: 1px solid #8080802b;
+      border-left: 2px solid #c71616;
+      color: black;
+      font-weight: bold;
+      position: relative;
+      &::before {
+        content: "";
+        height: 100%;
+        width: 2px;
+        background-color: #fff;
+        position: absolute;
+        right: -2px;
+        z-index: 99;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__list-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: none;
+  }
+  .active &__list-icon {
+    display: flex;
+  }
+}
+
+.main-content-cm {
+  flex: 1 1;
+  display: flex;
+  margin-left: 2rem;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  transform: translate(60px);
+
+  margin: 10px;
+  &__label {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+  }
+  &__icon {
+    width: 50px;
+    cursor: pointer;
+    color: white;
+  }
+}

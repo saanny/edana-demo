@@ -1,0 +1,20 @@
+@import "./scss/abstracts/functions";
+@import "./scss/abstracts/mixins";
+@import "./scss/abstracts/variables";
+
+@import "./scss/base/animations";
+@import "./scss/base/container";
+@import "./scss/base/base";
+@import "./scss/base/typography";
+@import "./scss/base/utilities";
+
+@import "./scss/components/breadcrumb";
+@import "./scss/components/tree";
+@import "./scss/components/btn";
+@import "./scss/components/role";
+
+@import "./scss/layout/header";
+@import "./scss/layout/form";
+@import "./scss/layout/footer";
+@import "./scss/layout/sidebar";
+@import "./scss/layout/content";

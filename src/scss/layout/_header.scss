@@ -1,0 +1,76 @@
+.header {
+  height: 6rem;
+  border-top: 1rem solid var(--color-primary);
+  background-color: var(--color-secondary);
+  width: 100%;
+  display: flex;
+  padding: 0 2rem;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  &__menu {
+    display: flex;
+  }
+}
+.menu-list {
+  display: flex;
+  color: $color-white;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-white;
+    margin-right: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    list-style: none;
+    transition: all 0.3s ease;
+    position: relative;
+    &::after {
+      content: "";
+      height: 0.2rem;
+      width: 0%;
+      background-color: $menu-border-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      color: $menu-border-color;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  &__item:hover &__icon {
+    fill: $menu-border-color;
+  }
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: $color-white;
+  }
+}

@@ -1,0 +1,48 @@
+.legal {
+  font-size: 1.2rem;
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #505050;
+  &__icon {
+    height: 6.5rem;
+    width: 6.5rem;
+    fill: #adadad;
+    margin-left: -1rem;
+  }
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    list-style: none;
+    & > * {
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    &:not(:first-child) {
+      padding: 0 2rem;
+      position: relative;
+      &:before {
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: #5050507d;
+        position: absolute;
+        left: 1rem;
+      }
+    }
+  }
+  &__list-link {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

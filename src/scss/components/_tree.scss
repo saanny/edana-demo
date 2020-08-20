@@ -1,0 +1,87 @@
+.tree {
+  flex: 0 0 35%;
+  background-color: #fdfdfd;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  overflow-y: scroll;
+}
+.tree-data {
+  flex-grow: 1 !important;
+  max-width: 40rem !important;
+}
+.tree-data__item {
+  position: relative;
+}
+.tree-add-btn {
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  width: 13rem;
+  margin-left: 3rem;
+  display: none;
+  a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #41a1f3;
+  }
+}
+.label-content {
+  display: flex;
+  padding-left: 1em;
+  border: 1px dotted rgba(0, 0, 0, 0.4);
+  border-width: 0 0 0px 1px;
+  color: #4c4c4ced;
+  &:hover .tree-add-btn {
+    display: flex;
+  }
+}
+.border-left {
+  border: none;
+  font-style: normal;
+  color: black;
+  font-weight: 450;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    height: 1em;
+    width: 1rem;
+    color: white;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+    content: "";
+    display: inline-block;
+    left: -8px;
+  }
+}
+#tree-root-heading {
+  font-weight: bold;
+}
+.tree-delete-color {
+  color: #b51d1d !important;
+}
+.react-checkbox-tree {
+  background: #fdfdfd;
+  padding: 2rem;
+  border: 1px solid #8080802b;
+  margin-top: 1rem;
+  border-radius: 3px;
+}
+.half-check {
+  color: gray;
+}
+.rct-node {
+  margin-bottom: 1rem;
+}
+.rct-title {
+  padding: 0 5px;
+  color: #4c4c4ced;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 2.5rem;
+  background-color: transparent !important;
+}
+.react-checkbox-tree label:hover {
+  background: transparent !important;
+}

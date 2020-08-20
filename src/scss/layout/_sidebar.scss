@@ -1,0 +1,70 @@
+.side {
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  border-radius: 0.3rem;
+  background-color: #fff;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 440;
+    font-size: 1.7rem;
+    padding: 2rem;
+  }
+  &__title-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    & > * {
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.sidebar-list {
+  &__item {
+    display: flex;
+    width: 100%;
+    background-color: #eaeaea5c;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s ease;
+    &:hover {
+      color: $btn-color;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding-left: 1rem;
+    color: inherit;
+  }
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    transition: all 0.2s ease;
+  }
+  &__item:hover &__icon {
+    fill: $btn-color;
+  }
+}
